@@ -9,20 +9,20 @@ type TraceLine = {
 }
 
 const TRACES: TraceLine[] = [
-  { ts:'00:00.001', tag:'sign',   tagClass:'tag-sign',   msg:'Session signed by <span class="addr">0x8f3aâ€¦c921</span>' },
+  { ts:'00:00.001', tag:'sign',   tagClass:'tag-sign',   msg:'Session signed by <span class="addr">0x8f3a…c921</span>' },
   { ts:'00:00.043', tag:'call',   tagClass:'tag-call',   msg:'invoke fetchPrice(<span class="val">ETH/USD</span>)' },
-  { ts:'00:00.112', tag:'result', tagClass:'tag-result', msg:'â†’ <span class="val">$3,412.80</span> Â· latency 69ms' },
-  { ts:'00:00.118', tag:'call',   tagClass:'tag-call',   msg:'invoke checkBalance(<span class="addr">0x8f3aâ€¦c921</span>)' },
-  { ts:'00:00.199', tag:'result', tagClass:'tag-result', msg:'â†’ <span class="val">0.42 ETH</span> Â· <span class="val">812 USDC</span>' },
-  { ts:'00:00.201', tag:'sim',    tagClass:'tag-sim',    msg:'simulate swapExact Â· input <span class="val">200 USDC</span>' },
-  { ts:'00:00.344', tag:'gas',    tagClass:'tag-gas',    msg:'est. gas <span class="val">0.000031 ETH</span> Â· $0.11' },
-  { ts:'00:00.346', tag:'error',  tagClass:'tag-error',  msg:'âš  slippage <span class="val">4.2%</span> exceeds limit 1%' },
+  { ts:'00:00.112', tag:'result', tagClass:'tag-result', msg:'â†’ <span class="val">$3,412.80</span> · latency 69ms' },
+  { ts:'00:00.118', tag:'call',   tagClass:'tag-call',   msg:'invoke checkBalance(<span class="addr">0x8f3a…c921</span>)' },
+  { ts:'00:00.199', tag:'result', tagClass:'tag-result', msg:'â†’ <span class="val">0.42 ETH</span> · <span class="val">812 USDC</span>' },
+  { ts:'00:00.201', tag:'sim',    tagClass:'tag-sim',    msg:'simulate swapExact · input <span class="val">200 USDC</span>' },
+  { ts:'00:00.344', tag:'gas',    tagClass:'tag-gas',    msg:'est. gas <span class="val">0.000031 ETH</span> · $0.11' },
+  { ts:'00:00.346', tag:'error',  tagClass:'tag-error',  msg:'⚠ slippage <span class="val">4.2%</span> exceeds limit 1%' },
   { ts:'00:00.350', tag:'sim',    tagClass:'tag-sim',    msg:'retry with split route Aâ†’Bâ†’C' },
-  { ts:'00:00.521', tag:'gas',    tagClass:'tag-gas',    msg:'est. gas <span class="val">0.000044 ETH</span> Â· $0.15' },
+  { ts:'00:00.521', tag:'gas',    tagClass:'tag-gas',    msg:'est. gas <span class="val">0.000044 ETH</span> · $0.15' },
   { ts:'00:00.522', tag:'result', tagClass:'tag-result', msg:'slippage <span class="val">0.8%</span> âœ“ within limit' },
-  { ts:'00:00.530', tag:'sign',   tagClass:'tag-sign',   msg:'receipt signed Â· hash <span class="addr">0x4e9fâ€¦a01b</span>' },
-  { ts:'00:00.531', tag:'call',   tagClass:'tag-call',   msg:'invoke broadcastIntent Â· dry-run' },
-  { ts:'00:00.620', tag:'result', tagClass:'tag-result', msg:'â†’ ready for mainnet Â· 0 reverts' },
+  { ts:'00:00.530', tag:'sign',   tagClass:'tag-sign',   msg:'receipt signed · hash <span class="addr">0x4e9f…a01b</span>' },
+  { ts:'00:00.531', tag:'call',   tagClass:'tag-call',   msg:'invoke broadcastIntent · dry-run' },
+  { ts:'00:00.620', tag:'result', tagClass:'tag-result', msg:'â†’ ready for mainnet · 0 reverts' },
 ]
 
 export default function TraceFeed() {
