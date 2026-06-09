@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: var(--font-syne);
+    --font-body:    var(--font-mono);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: #080B10;
+    color: #F0F0F0;
+    font-family: var(--font-body), 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #E8FF47;
+    color: #080B10;
+  }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #080B10; }
+  ::-webkit-scrollbar-thumb { background: #2D3748; border-radius: 2px; }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display), 'Syne', sans-serif; }
+  .font-mono    { font-family: var(--font-body), 'IBM Plex Mono', monospace; }
+
+  .border-probe { border-color: rgba(232, 255, 71, 0.12); }
+
+  .text-accent  { color: #E8FF47; }
+  .text-orange  { color: #FF6B35; }
+  .text-muted   { color: #4A5568; }
+
+  .bg-surface   { background: #0F1419; }
+  .bg-surface2  { background: #141C26; }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
