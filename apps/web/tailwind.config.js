@@ -16,8 +16,8 @@ module.exports = {
         border:   'rgba(232,255,71,0.12)',
       },
       fontFamily: {
-        display: ['Syne', 'sans-serif'],
-        mono:    ['IBM Plex Mono', 'monospace'],
+        display: ['Space Grotesk', 'sans-serif'],
+        mono:    ['Inter', 'sans-serif'],
       },
     },
   },
