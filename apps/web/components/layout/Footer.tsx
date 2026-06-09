@@ -15,7 +15,7 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <span className="font-mono text-xs text-muted">Built on Base Â· 2026</span>
+      <span className="font-mono text-xs text-muted">Built on Base · 2026</span>
     </footer>
   )
 }
