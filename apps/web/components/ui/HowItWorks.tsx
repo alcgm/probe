@@ -8,13 +8,13 @@ const STEPS = [
     code: `<span style="color:#4A5568">// wallet-signed session init</span>
 
 probeSession.<span style="color:#B794F6">init</span>({
-  <span style="color:#63B3ED">wallet</span>:   <span style="color:#FF6B35">"0x8f3aâ€¦c921"</span>,
+  <span style="color:#63B3ED">wallet</span>:   <span style="color:#FF6B35">"0x8f3a…c921"</span>,
   <span style="color:#63B3ED">agent</span>:    <span style="color:#FF6B35">"trading-agent-v2"</span>,
   <span style="color:#63B3ED">network</span>:  <span style="color:#FF6B35">"base-mainnet"</span>,
-  <span style="color:#63B3ED">signature</span>: <span style="color:#FF6B35">"0xd4e1â€¦"</span>
+  <span style="color:#63B3ED">signature</span>: <span style="color:#FF6B35">"0xd4e1…"</span>
 })
 
-<span style="color:#4A5568">// no email Â· no API key</span>
+<span style="color:#4A5568">// no email · no API key</span>
 <span style="color:#4A5568">// wallet = identity</span>`,
   },
   {
@@ -43,7 +43,7 @@ probeSession.<span style="color:#B794F6">simulate</span>({
 
 probeSession.<span style="color:#B794F6">export</span>({
   <span style="color:#63B3ED">target</span>:   <span style="color:#FF6B35">"signa-marketplace"</span>,
-  <span style="color:#63B3ED">receipt</span>:  <span style="color:#FF6B35">"0x4e9fâ€¦a01b"</span>,
+  <span style="color:#63B3ED">receipt</span>:  <span style="color:#FF6B35">"0x4e9f…a01b"</span>,
   <span style="color:#63B3ED">tests</span>:    <span style="color:#E8FF47">12</span>,
   <span style="color:#63B3ED">passed</span>:   <span style="color:#E8FF47">12</span>
 })
